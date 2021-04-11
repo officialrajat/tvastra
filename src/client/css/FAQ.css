@@ -1,0 +1,151 @@
+
+.heading_and_img-section{
+    width: 100%;
+    height: 20rem;
+    background: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg") no-repeat center;
+   background-size: cover;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+.heading_and_img-section p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.main-div ul li{
+    margin-bottom: 2.5rem;
+}
+.question-div{    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color:  var( --doctor-portfolio-naming-color);
+    margin: 0 0 1.5rem 0;
+   
+}
+
+.article{
+    
+    margin: 0 0 0 1rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #5d5d5d;
+
+}
+
+.arrow-icon{width: 1.6rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(222, 230, 230);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 0.1rem;
+}
+.item1,.item2 ,.item3,.item4, .item5, .item6,.item7{
+    text-align: left;
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+    background-color: var(--bg-lightsky-blue);    
+}
+
+.item2 ,.item3,.item4, .item5, .item6,.item7{
+display: none;
+
+}
+
+@media screen and (max-width:480px){
+    .heading_and_img-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-div{
+        padding: 3rem 0;
+        width: 85%;
+    }
+
+    .enquiry-section-heading{
+        width: 90%;
+        padding: 3rem 0 1rem 0 ;
+        text-align: center;
+        }
+        .enquiry-section-button-div{
+            width: 42%;
+            min-width: 14rem;
+            height: 4rem;
+            padding:0 0 3rem 0;
+        }
+    
+
+}
+@media screen and (min-width:481px) and (max-width:840px){
+    .heading_and_img-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .main-div{
+        padding: 3rem 0;
+        width: 85%;
+    }
+
+
+    .enquiry-section-heading{
+        width: 90%;
+        padding: 3rem 0 1rem 0 ;
+        text-align: center;
+        }
+        .enquiry-section-button-div{
+            width: 25%;
+            min-width: 14rem;
+            height: 4rem;
+            padding:0 0 3rem 0;
+        }
+
+}
+
+@media screen and (min-width:841px){
+    .heading_and_img-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10rem;
+        justify-content: center;
+    }
+    .main-div{
+        padding: 3rem 0;
+        width: 85%;
+    }
+
+    .enquiry-section{
+        height: 15rem;   
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-content: center;
+    }
+      
+      
+.enquiry-section-heading{
+    
+    padding-left:  10rem ;
+    text-align: left;
+    }
+    .enquiry-section-button-div{
+        width: 20rem;
+        min-width: 14rem;
+        height: 4rem;
+        padding-right:10rem ;
+    }
+    
+}

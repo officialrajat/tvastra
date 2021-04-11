@@ -1,0 +1,271 @@
+@import "./variable.css";
+
+.heading-section{
+    width: 100%;
+    position: relative;
+    height: 32rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+.heading-section div:first-of-type{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position:absolute;
+background-image: linear-gradient(var(--lightgray-transparent),var(--lightgray-transparent));}
+
+.heading-section figure{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.heading-section figure img{
+    object-fit: cover;
+    object-position: top;
+}
+.page-heading{
+    z-index: 4;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.discription-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.discription-text-div{
+    width: 88%;
+}
+.discription-text-div h1{
+    color: var( --light-black-text);
+}
+.discription-text-div p{
+
+    color: var(--light-gray-font-color);
+}
+.female-doc-img{
+    background-image:linear-gradient(rgb(255,255,255),rgb(255, 255, 255));
+}
+.stats-section{
+
+    color:white;
+}
+
+.card{
+    border: 1px solid #424242;
+}
+.hiring-form-section{
+    background-color: var(--darksky-color);
+    text-align: center;
+}
+.enquiry-heading-div p{
+    font-size: 2rem;
+}
+@media screen and (max-width:480px) 
+{
+    
+    .female-doc-img{
+        height: 50rem;
+    }
+
+.stats-section{
+    background-color: rgb(13, 15, 28);
+    display: grid;
+    justify-items: center;
+}
+
+.stats-heading-div{
+    width:88%;
+}
+.heading-div h1{
+ font-size: 2.4rem;
+ line-height: 2.6rem;
+}
+.heading-div p{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+}
+
+.enquiry-btn-div{
+  width: 18rem;
+  height: 4rem;
+}
+.card-div{
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.card{
+    width:100%;
+    margin-bottom: 1.5rem;
+    
+}
+.hiring-form-section{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+}
+}
+
+@media screen and (min-width:481px) and (max-width:840px) 
+{
+    .discription-section{
+        width: 90%;
+        display: grid;
+        grid-template-areas: "article1 photo"
+        "sign photo";
+    }
+    .discription-text-div{
+        grid-area:article1;
+    }
+
+    .female-doc-img{
+        grid-area: photo;
+        height: 38rem;
+    }
+    .sign-img{
+        width: 20rem;
+        grid-area:sign;
+    }
+
+.stats-section{
+    background-color: rgb(13, 15, 28);
+     display: flex;
+     flex-direction: column;
+     padding: 0 5%;
+}
+
+.stats-heading-div{
+    width:88%;
+    text-align: start;
+}
+
+.heading-div h1{
+ font-size: 2.4rem;
+ line-height: 2.6rem;
+}
+.heading-div p{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+}
+
+.enquiry-btn-div{
+  width: 18rem;
+  height: 4rem;
+  margin: 2rem 0;
+
+}
+.card-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 100%;
+    grid-gap: 1rem;
+    margin: 3rem 0; 
+}
+
+.card{
+    height: 8rem;
+    width:100%;
+    margin: 0;
+}
+.hiring-form-section{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+}
+
+}
+
+@media screen and (min-width:841px) 
+{
+        .discription-section{
+            width: 70%;
+            display: grid;
+            grid-template-areas: "article1 photo"
+            "sign photo";
+        }
+        .discription-text-div{
+            grid-area:article1;
+        }
+    
+        .female-doc-img{
+            grid-area: photo;
+            height: 38rem;
+        }
+        .sign-img{
+            width: 20rem;
+            grid-area:sign;
+        }
+    
+    .stats-section{
+        background-color: rgb(13, 15, 28);
+         display: grid;
+         grid-template-areas: "heading card"
+         "btn card";
+        grid-template-columns: 40% 60%;
+        padding:2rem 5% ;
+    }
+    
+    .stats-heading-div{
+        grid-area:heading;
+        width:88%;
+        text-align: start;
+    }
+    
+    .heading-div h1{
+     font-size: 2.4rem;
+     line-height: 2.6rem;
+    }
+    .heading-div p{
+        font-size: 1.4rem;
+        font-weight: lighter;
+        line-height: 1.8rem;
+    }
+    
+    .enquiry-btn-div{
+        grid-area:btn;
+      width: 18rem;
+      height: 4rem;
+    
+    }
+    .card-div{grid-area:card;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 100%;
+        grid-gap: 1rem;
+        margin: 3rem 0; 
+    }
+    
+    .card{
+        height: 8rem;
+        width:100%;
+        margin: 0;
+        text-align: center;
+        display: grid;
+        align-content: center;
+    }
+    .hiring-form-section{ box-sizing: border-box;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 5%;
+       height: 20rem;
+        width: 100%;
+        
+    }
+    
+}

@@ -1,0 +1,34 @@
+:root{
+    --lightsky-color:#9bccf6;   
+    --light-black:rgb(20, 27, 43);
+    --darksky-color: #88B0D7;
+    --bg-darkgray:rgb(16, 22, 48);
+    --light-skyblue:rgb(39, 135, 219);
+    --lightgray-50:rgb(177, 174, 174);
+    --lightgray-60:rgb(197, 194, 194);
+    --lightgray-10: rgb(73, 71, 71);
+    --skyblue-20:rgb(170, 237, 250);
+    --medicalfield-heading-color:rgb(16, 22, 48);
+    --medicalfield-card-bottom-shade:rgba(58, 65, 71, 0.918);
+    --light-blue-80:#0099ff;
+    --button-font-white:white;
+    --footer-background-color:rgb(16, 22, 48);
+    --tranparent:rgb(255,0,0,0);
+    --lightgray-transparent:rgba(95, 93, 93, 0.5);
+    --lightgray-5:rgb(216, 211, 211,0.2);
+    --white-text:white;
+    --skyblue-name:#0099ff;
+    --skyblue-lineargradient:#0083B0;
+    --light-skyblue-lineargradient:#16b3e7;
+    --bg-lightsky-blue:#bbdff6;
+    --height-search-form-input:40px;
+    --darkgray-color:rgb(70, 66, 66);
+    --theme-blue:#98c1d9;
+    --trmt-more-services-bg-color: #52858f;
+    --bg-light-black:rgb(13, 15, 28);
+    --light-black-text:rgb(13, 15, 28);
+    --appointment-page-background-color:#88B0D7;
+    --appointment-page-heading-color:rgb(39, 135, 219);
+    --plus-page-rating-stars-color:#5500ff;
+    --light-gray-font-color:rgb(158, 155, 155);
+    }

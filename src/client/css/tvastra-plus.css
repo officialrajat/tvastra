@@ -1,0 +1,668 @@
+@import"./variable.css";
+
+
+main{position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bg-section{
+    z-index: 1;;
+    width: 100%;
+    height: 100%;
+position: absolute;
+}
+.bg-section figure{
+    height: 40rem;
+    width: 100%;
+}
+.bg-section div{height: 60rem;
+   background: linear-gradient(var(--light-skyblue-lineargradient),transparent);
+   width: 100%;
+}
+.main-section{z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-div{
+    margin: 3rem 0;
+}
+.main-sec-heading{
+    width: 90%;
+}
+.btn-lightblue-small{
+    background-color:var(--light-blue-80);
+    padding:1.2rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    border-radius: 8%;
+    border:none;
+}
+.plans-div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border: 0.1rem var(--lightgray-60) solid;
+    margin: 2rem 0 3rem 0;
+    box-shadow: 0 0 20px  var(--lightgray-60);
+}
+.plans-heading{
+    text-align: center;
+    width: 90%;
+    border-bottom: 0.1rem var(--lightgray-60) solid;
+    padding-bottom: 2rem;
+    margin:2rem 0 0 0;
+}
+
+.plans-list{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-card-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+    }
+
+.plans-name{
+    width: 70%;
+    text-align: center;
+    border-bottom: 0.1rem var(--lightgray-60) solid;
+    padding-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+.plan-features-list-div{
+    width: 70%;
+}
+.plan-features-list-div ul li{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+.blue{
+    color:var(--skyblue-name);
+}
+.onborder-txt{
+    position: absolute;
+    top: -10px;
+    background: green;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+.plan2{
+    background-image: linear-gradient(lightblue, transparent);
+}
+.pricing-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15rem;
+}
+
+
+.rating-section{
+    
+    text-align:center;
+    display: grid;
+    align-items: center;
+    
+}
+.rating-heading-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rating-heading-div p{
+width: 80%;
+}
+.font-size-lgr{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
+   padding-top: 1rem;
+   color: var(--lightgray-10);
+}
+
+.star-rating-div{
+    color: var(--skyblue-name);
+    line-height: 1.5rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+.star-rating-div p{
+    font-size: 1.5rem;
+}
+.stars-div{ 
+    margin-top: 1rem;
+}
+
+.bar{
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+    color: var(--light-skyblue);
+}
+
+.rowbars-div{
+
+}
+.outer-rowbar{
+    height: 1.5rem;
+  width: 20rem;
+  background-color: var(--lightgray-60);
+  border-radius: 1rem;
+}
+
+.inner-rowbar{
+    height: 100%;
+    width: 50%;
+    background-color: var(--light-skyblue);
+    border-radius: 1rem;
+}
+.rating-cards{width: 100%;
+    margin:3rem 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    color: var(--light-skyblue);
+}
+.card{
+    width: 80%;
+    line-height: 2rem;    
+    
+}
+
+.card-icon{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.card p{
+    margin-top:0.5rem;
+   font-size:1.3rem;
+}
+.hospital-logo-section{
+    width: 100%;
+    display:grid;
+    justify-content:center;
+    justify-items: center;
+    
+}
+
+.para-heading{
+    width: 80%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5rem var(--bg-lightsky-blue) solid;
+    margin-bottom: 2.5rem;
+}
+
+.discription-div{ width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+    text-align:center;
+}
+.discription-div div{
+    margin-top:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.correct-tick-icon{
+    margin-right:1.5rem;
+    font-size:2rem;
+    color:var(--light-skyblue);
+    
+}
+.discription-div div p{
+   text-align:start;
+    padding:0;
+    line-height: 2.2rem;
+}
+
+.hospital-logo-div{width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-col2{width:90%;
+    display: grid;
+    grid-template-areas: "one two"
+    "three four"
+    "five six";
+    
+}
+
+.hospital-logo{
+    height: 10rem;
+}
+
+.hospital-logo img{
+    object-position: center;
+    width: 80%;
+    object-fit: contain;
+}
+
+.logo-one{
+    grid-area: one;
+    border-right: 0.2rem var(--bg-lightsky-blue) solid;
+    border-bottom: 0.2rem var(--bg-lightsky-blue) solid;
+}
+.logo-two{
+    grid-area: two;
+    border-bottom: 0.2rem var(--bg-lightsky-blue) solid;
+}
+.logo-three{
+    grid-area: three;
+    border-right: 0.2rem var(--bg-lightsky-blue) solid;
+    border-bottom: 0.2rem var(--bg-lightsky-blue) solid;
+}
+.logo-four{
+    grid-area: four;
+    border-bottom: 0.2rem var(--bg-lightsky-blue) solid;
+}
+.logo-five{
+    grid-area: five;
+    border-right: 0.2rem var(--bg-lightsky-blue) solid;
+    
+}
+.logo-six{
+    grid-area: six;
+}
+
+.plan-benefit-div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.discription-photos-div{
+    margin: 2rem 0 3rem 0;
+    box-shadow: 0 0 8px var(--lightgray-50);
+    border-radius: 5%;
+
+}
+.discription-photos-div img{
+    border-radius: 5%;
+}
+
+.tests-cards-section{
+    width: 90%;
+}
+.test-cards-heading
+{
+    margin-bottom: 2rem;
+    text-align:center;       
+}
+
+.test-cards-heading label{
+font-weight: 200;
+font-size: 1.5rem;
+letter-spacing: 0.1rem;
+
+}
+
+.tests-cards-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+}
+.test-cards{
+    justify-content: space-evenly;
+    text-align: center;
+}
+.test-cards figure{
+   height: 5rem;
+}
+.test-cards figure img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.test-cards{box-sizing: border-box;
+    background-color: white;
+    height: 15rem;
+    box-shadow:0px 0px 2rem lightgray;
+    
+ 
+}
+
+.testimonial-section{
+    margin:0 0 4rem 0;
+    width: 90%;
+}
+.testimonial-heading h1{
+    margin-right: 1.5rem;
+}
+.testimonial-card-div{
+    display: grid;
+    margin:2rem 0 0 0 ;
+    grid-gap: 1rem;
+}
+.testimonial-card{
+    padding:1.5rem 8%;
+    box-shadow: 0px 0px 1rem lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimonial-card label{
+    line-height: 2rem;
+    font-size:1.5rem;
+    letter-spacing: 0.1rem;
+}
+.user-pic-and-name-div{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+}
+.user-pic-div{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.highlighter-plan-taken{
+    margin-top:0.5rem;
+    color: var(--skyblue-name);
+    background-color:var(--bg-lightsky-blue);
+    padding: 0.8rem;
+    border-radius:0.5rem;
+}
+
+.faq-section{
+    width: 90%;
+    margin: 0 0 3rem 0;
+}
+.question-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--light-skyblue);
+    margin: 1.5rem 0 ;
+}
+.question-div h3{
+    margin-right: 1rem;
+}
+.arrow-icon{
+  font-size: 1.8rem;
+}
+.article{ box-sizing: border-box;
+    background-color: var(--bg-lightsky-blue);
+    padding: 0.8rem 1rem 0.8rem 0.5rem ;
+    text-align: start;
+    
+}
+.item2 ,.item3 ,.item4 ,.item5{
+    display: none;
+}
+@media screen and (max-width:480px) {
+   main{
+       height: 170rem;
+   }
+   .plan-card-div{
+       height: 40rem;
+   }
+}
+@media screen and (min-width:481px) and (max-width:840px) {
+    main{
+        height: 90rem;
+    }
+
+    .main-section{
+         width: 100%;
+     }
+
+     .bg-section figure{
+         height: 30rem;
+     }
+
+     .bg-section div{
+         height: 30rem;
+     }
+    
+    .main-sec-heading{display: flex;
+        flex-direction: column;
+        
+        text-align: start;
+        align-items: flex-start;
+    }
+    .main-sec-heading h1{
+        margin-top: 2rem;
+        font-size: 3.2rem;
+    }
+    .plans-list{width: 100%;
+        
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .plan-card-div{
+        height: 50rem;
+    }
+    
+    .flex-center{
+        width: 90%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top:3rem;
+    }
+
+ .rating-cards{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .hospital-logo-section{ margin-bottom: 3rem;
+     grid-template-areas: "heading heading"
+     "article logos";
+ }
+ .para-heading{ grid-area: heading;
+    width: 40%;
+}    
+.discription-div{
+    grid-area: article;
+}
+.hospital-logo-div{
+    grid-area:logos
+}
+.plans-benefit-section{
+    width: 90%;
+}
+
+.plan-benefit-div .discription-div{
+    width: 50%;
+}
+
+.benefit-discription1-div{
+flex-direction: row-reverse;
+justify-content: space-evenly;
+align-items: center;
+}
+.benefit-discription2-div{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;}
+.benefit-discription3-div{
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;}
+.discription-photos-div{
+    height: 30rem;
+    width: 32rem;
+}
+.tests-cards-section{
+    margin-bottom:3rem;
+}
+.test-cards-heading{
+    text-align: start;
+}
+
+.testimonial-card-div{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 90rem;
+}
+.question-div{
+    margin-bottom: 3rem;
+}
+
+.question-div h3{
+    font-size:2rem;
+}
+
+}
+
+@media screen and (min-width:841px) {
+    main{
+        height: 90rem;
+    }
+
+    .main-section{
+         width: 80%;
+         max-width:120rem;
+     }
+
+     .bg-section figure{
+         height: 36rem;
+     }
+
+     .bg-section div{
+         height: 30rem;
+     }
+    
+    .main-sec-heading{display: flex;
+        flex-direction: column;
+        
+        text-align: start;
+        align-items: flex-start;
+    }
+    .main-sec-heading h1{
+        margin-top: 2rem;
+        font-size: 3.2rem;
+    }
+    .plans-list{width: 80%;
+        
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .plan-card-div{
+        height: 50rem;
+    }
+    
+    .flex-center{
+        width: 90%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top:3rem;
+    }
+
+ .rating-cards{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .hospital-logo-section{ 
+    width: 90%; 
+    margin-bottom: 3rem;
+     grid-template-areas: "heading heading"
+     "article logos";
+ }
+ .para-heading{ grid-area: heading;
+    width: 40%;
+}    
+.discription-div{
+    grid-area: article;
+}
+.hospital-logo-div{
+    grid-area:logos
+}
+.plans-benefit-section{
+    width: 90%;
+}
+
+.plan-benefit-div .discription-div{
+    width: 45%;
+}
+
+.plan-benefit-div .discription-div h1{
+    text-align: start;
+}
+.benefit-discription1-div{
+flex-direction: row-reverse;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+
+.benefit-discription2-div{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;}
+.benefit-discription3-div{
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;}
+.discription-photos-div{
+    height: 30rem;
+    width: 32rem;
+}
+.tests-cards-section{
+    margin-bottom:3rem;
+}
+.test-cards-heading{
+    text-align: start;
+}
+.tests-cards-div{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.testimonial-card-div{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 130rem;
+}
+.question-div{
+    margin-bottom: 3rem;
+}
+
+.question-div h3{
+    font-size:2rem;
+}
+
+
+}

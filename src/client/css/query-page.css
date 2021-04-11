@@ -1,0 +1,79 @@
+@import "./variable.css";
+
+body{
+    background-color: #98c1d9;
+    text-align: center;  
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.main-div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form-heading-div{
+    width: 100%;
+    color: var(--doctor-portfolio-naming-color);
+    padding: 4rem 0 3rem 0;
+    border-bottom: 0.1rem gray solid;
+    margin-bottom: 1rem;
+}
+
+input{ box-sizing: border-box; 
+    width: 100%;
+    height: 4rem;
+    border: 0.1rem gray solid;
+    margin: 1rem 0 1rem 0;
+    padding-left:2rem ;
+}
+
+textarea{ 
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.1rem gray solid;
+    height: 20rem;
+    padding:1.2rem 1rem 1rem 2rem;
+    margin: 1rem 0 2rem 0 ;
+}
+
+.main-div button{box-sizing: border-box;
+    height: 5rem;
+width: 100%;
+letter-spacing: 0.5rem;
+margin-bottom: 6rem;
+}
+@media screen and (max-width:480px) {
+    .main-div{
+        width: 90%;
+        margin: 2.5rem 0 ;
+    }
+form{
+    width: 84%;
+}
+}
+@media screen and (min-width:481px) and (max-width:840px) {
+    .main-div{
+        width: 60%;
+        margin: 5rem 0 ;
+    }
+form{
+    width: 84%;
+}
+}
+@media screen and (min-width:841px)  {
+    .main-div{
+        width: 40%;
+        margin: 5rem 0 ;
+    }
+form{
+    width: 84%;
+}
+}

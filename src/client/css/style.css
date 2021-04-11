@@ -1,0 +1,1207 @@
+@import "./variable.css";
+
+
+    .search-bar-form-location-input-div i{
+        background-color: white;   
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .medicalfield-section{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin: 0%;
+    }
+    
+  
+.medicalfield-cards-div{ 
+   
+    background-size: cover;
+    position: relative;
+    background-origin: border-box;   
+}
+
+
+.medicalfield-cards-div.dentistry { grid-area: card1;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0),rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg) no-repeat center; 
+  
+} 
+.medicalfield-cards-div.multi-organ {grid-area: card2;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0), rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg) no-repeat center; 
+   
+} 
+.medicalfield-cards-div.cancer {grid-area: card3;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0), rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg) no-repeat center; 
+    
+} 
+.medicalfield-cards-div.orthopadics {grid-area: card4;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0),rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg) no-repeat center; 
+
+    
+} 
+.medicalfield-cards-div.cardiology {grid-area: card5;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0),rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg) no-repeat center; 
+ 
+    
+} 
+.medicalfield-cards-div.infertility {grid-area: card6;
+    background: linear-gradient(rgb(255,0,0,0),rgb(255,0,0,0), rgba(14, 17, 20, 0.918)),url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg) no-repeat center; 
+
+} 
+
+
+
+.services-section{ width: 100%;
+   background-color: var(--lightgray-5);
+    text-align: center;
+    padding-bottom:5rem;
+
+}
+
+.services-section-icons-div{
+    background-color: white;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+.autocomplete{
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    font-size: large;
+    letter-spacing: 1px;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+   width: 100%;
+   left: 0; 
+  right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+   
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+
+    
+  .procedure-section{
+    background-color: white;
+    width: 100%;
+   }
+
+   .white-color{
+    color:white;
+   }
+  
+
+
+
+    
+    .blue-list-num {
+        color: skyblue;
+        }
+
+
+
+.doctor-portfolio-section{
+  
+    background-color:var(--bg-darkgray);
+    color: white;
+   
+   
+}   
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+    /*layout*/
+    /*  ----------------search - bar -section-----------------*/
+.search-bar-section{
+    background-color: var(--lightsky-color);
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.search-bar-section-heading{
+padding:2.4rem 0 2rem 0;
+width: 86%;
+}
+
+.search-bar-form-div{
+    width: 86%;
+    height: auto;
+    margin: 0;
+    padding: 0%;
+}
+.search-bar-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.search-bar-form-location-input-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.search-bar-form-specific-input-div{
+   height: 4rem;
+   width: 95%;
+   padding-left: 5%;
+   margin: 0 0 1.8rem 0;
+   background-color: white;
+   
+}
+.search-bar-btn-div{
+    width: 35%;
+    margin-bottom: 2.8rem;
+}
+.search-bar-form-btn{
+  width:100%;
+  height: 3.6rem;
+}
+
+
+
+
+/*--------procedure-section----------*/
+.procedure-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.procedure-section-heading-div{
+    padding: 3rem 0 1.5rem 0;
+    width: 86%;
+}
+.procedure-section ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+    margin: 0;
+    width: 86%;
+}
+
+.procedure-section-lists-div{
+    display: grid;
+    grid-template-areas: "list1"
+    "detail1"
+    "list2"
+    "list3"
+    "list4"
+    "list5"
+    "list6"
+    "list7";
+   
+     width: 100%;
+     padding: 0 0 3rem 0;
+}
+
+.procedure-section-lists-div li{
+   
+    padding: 0 0 0 5%;
+    margin: 0 0 1rem 0;
+    color: var(--lightgray-50);
+    display: grid;
+    grid-template-columns: 10% 90%;
+   justify-items: left;
+   align-items: center; 
+   border: 0.1rem var(--lightgray-10) solid;
+   border-radius: 1rem;
+   margin-bottom: 1rem;
+   height: 5.2rem;
+   font-size: 2rem;
+}
+
+.procedure-section-list1{
+grid-area: list1;
+}
+.procedure-section-div1-description{
+    width: 100%;
+    grid-area: detail1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+.procedure-section-div1-description figure{
+    width: 90%;
+    height: auto;
+    padding: 0px;
+    margin: 0 0 2rem 0 ;
+}
+
+.procedure-section-list2{
+    grid-area: list2;
+    
+}
+
+.procedure-section-list3{
+    grid-area: list3;
+    
+}
+.procedure-section-list4{
+    grid-area: list4;
+    
+}
+.procedure-section-list5{
+    grid-area: list5;
+    }
+.procedure-section-list6{
+    grid-area: list6;
+    
+}
+.procedure-section-list7{
+    grid-area: list7;
+    
+}
+
+
+
+
+/*-------------portfolio-section--------------*/
+
+.doctor-portfolio-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }   
+
+.doctor-portfolio-heading-div{
+    padding:  0;
+    margin: 3rem 0 2rem 0;
+    width:90%;
+}
+
+.doctor-portfolio-section-grid{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem;
+    width: 90%;
+    padding-bottom: 3rem;
+}
+.doctor-portfolio-card-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.doctor-portfolio-card-div figure{
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+ }
+.doctor-portfolio-card-details-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: white;
+    padding: 1.5rem 0 0 0;
+}
+.doctor-portfolio-card-namelist-div{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 80%;
+color: var( --light-skyblue);
+}
+.doctor-portfolio-card-hr-div{
+    width: 3rem;
+    margin-right: 0.5rem;
+    height: 0.2rem;
+    background-color: var( --light-skyblue);
+    margin-top: 0.6rem;
+}
+
+.doctor-portfolio-card-namelist-div ul{
+    list-style-type: none;
+    padding-left: 0;
+    color: black;
+    margin: 0.8rem 0 1rem 0 ;
+    }
+
+.doctor-portfolio-card-bottom-line-div{
+    background-color: var( --skyblue-20);
+    height: 0.5rem;
+}    
+/*-----------medicalfield-section------------*/
+
+.medicalfield-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.medicalfield-heading-div{
+   width:90%;
+    padding: 2.5rem 0 2rem 0;
+}
+.medicalfield-section-grid-div{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6";  
+}
+.medicalfield-cards-div{
+        color: white;
+        height: 34.5rem;
+        min-height: 32rem;
+        width: 90%;
+        margin: 2% 5%; 
+        padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+
+  
+.medicalfield-cards-div h3 {
+   
+   padding: 0 0 0 2rem;
+} 
+
+.medicalfield-cards-div p {
+    padding: 0 0 0 2rem;
+    margin: 0.5rem 0 2rem 0 ;
+    font-size: 1.3rem;
+}
+
+/*----------------services-section------------------*/
+.services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.services-section-heading{
+    padding: 3rem 0 2rem 0;
+    width: 90%;
+}
+.services-section-div{
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+    "iconOne iconTwo"
+    "iconThree iconFour"
+    "iconFive iconSix";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  padding:0 0 2rem 0;
+}
+.services-section-icons-div{
+
+}
+
+.services-section-icons-div.travel{
+    grid-area: iconOne;
+}
+.services-section-icons-div.food{
+    grid-area: iconTwo;
+}
+.services-section-icons-div.accommodation{
+grid-area: iconThree;
+}
+.services-section-icons-div.labs{
+    grid-area: iconFour;
+}
+
+.services-section-icons-div.reports{
+    grid-area: iconFive;
+}
+
+.services-section-icons-div.ambulance{
+    grid-area: iconSix;
+}
+
+
+}
+
+
+/*---------------------tablet view---------------------------------------------*/
+
+
+
+@media screen and (min-width:481px) and (max-width:840px){
+  
+/*----------------------search-bar-section---------------------*/
+ 
+
+.search-bar-section{
+    background-color: var(--lightsky-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.search-bar-section-heading{
+    width: 94%;
+    padding: 3rem 0 2rem 0;
+}
+
+
+.search-bar-form-div{
+   
+    height: 4rem;
+    width: 94%;
+    margin: 0 0 3rem 0;
+}
+.search-bar-form{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    
+}
+.search-bar-form input{
+letter-spacing: 1.5%;
+}
+.search-bar-form-location-input-div{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items:center;
+    justify-content: center;
+    border-right: 1px gray solid; 
+    width: 30%;
+    height: 100%;   
+    margin-right: 0%;
+}
+
+.search-bar-form-specific-input-div{
+    width:49%;
+    height: 100%;
+    padding-left: 3%;
+    background-color: white;
+}
+.search-bar-btn-div{
+    width: 18%;
+    height: 100%;
+}
+.search-bar-form-btn{
+height: 100%;
+width: 100%;
+text-align: center;
+}
+
+/*------------------procedure-section-----------------*/
+.procedure-section{
+
+    display: grid;
+    height: auto;
+    justify-items: center;
+    width: 100%;
+    padding: 0;
+    }
+.procedure-section-heading-div{
+    width: 78%;
+    margin: 0 0 20px 0;
+    
+}
+ .procedure-section ul{
+     width: 100%;
+     text-decoration: none;
+     list-style-type: none;
+     margin: 0;
+     padding: 0 0 0 10%;
+ }
+ 
+ .procedure-section-lists-div{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-template-areas: "list1 detailone"
+     "list2 detailone"
+     "list3 detailone"
+     "list4 detailone"
+     "list5 detailone"
+     "list6 detailone"
+     "list7 detailone";  
+     margin: 0 0 30px 0;
+ }
+ 
+ .procedure-section-lists-div li{
+     display: grid;
+     grid-template-columns: 15% 85%;
+     align-content: center;
+     border: 1px rgb(230, 228, 228) solid;
+     width: 95%;
+     height: auto;
+     border-radius: 6%;
+     margin-bottom: 10px;
+     text-align: left;
+     color: var(--lightgray-50);
+     padding:  0 0 0 5%;
+     font-size: 2rem;
+ }
+ 
+ .procedure-section-div1{
+ 
+ grid-area: list1;
+    
+ }
+ 
+ .mrgn-25{
+     margin: 0 25px 0 0;
+ }
+ .procedure-section-div2{
+     grid-area: list2;
+    
+     }
+     .procedure-section-div3{
+         grid-area: list3;
+         }
+         
+         .procedure-section-div4{
+             grid-area: list4;
+             }
+ 
+             .procedure-section-div5{
+                 grid-area: list5;
+                 }
+                 .procedure-section-div6{
+                     grid-area: list6;
+                     }
+                     .procedure-section-div7{
+                         grid-area: list7;
+                         }
+                     
+         
+ 
+ 
+ 
+ 
+ .procedure-section-div1-description{
+     grid-area: detailone;
+     display: flex;
+     flex-direction: column;
+     width: 70%;
+     align-items: center;
+     padding: 0 0 0px  10% ;
+ }
+ 
+ .procedure-section-div1-description figure{
+    width: 100%;
+     padding: 1rem 0 0 0 ;
+     margin: 0  0 4rem 0;
+ }
+ 
+ .description-text-div{
+     width: 80%;
+     text-align: center;
+ }
+ /*----------------doctor-portfolio-section--------------------*/
+.doctor-portfolio-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 0 0;
+}    
+
+.doctor-portfolio-heading-div{
+    text-align: center;
+    letter-spacing: 1px;
+    width: 95%;
+    margin: 0 0 30px 0;
+}
+
+.doctor-portfolio-section-grid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    grid-template-areas: "card1 card2"
+    "card3 card4";
+    width: 90%;
+    grid-gap:1.5rem;
+    padding: 0 0 3rem 0;
+  
+}
+
+.doctor-portfolio-card-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    
+}
+.portfolio-card1{
+    grid-area: card1;
+   
+}
+.portfolio-card2{
+    grid-area: card2;
+    
+}
+.portfolio-card3{
+    grid-area: card3;
+}
+.portfolio-card4{
+    grid-area: card4;
+}
+
+.doctor-portfolio-card-div figure{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.fsize-vw{
+    font-size: 2vw;
+}
+.doctor-portfolio-card-details-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: white;
+    padding-top: 0;
+}
+
+.doctor-portfolio-card-namelist-div{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 80%;
+color: var(--light-skyblue);
+padding: 1rem 0 1rem 0;
+}
+
+.doctor-portfolio-card-hr-div{
+    width: 3rem;
+    margin-right: 0.5rem;
+    height: 0.2rem;
+    background-color: var( --light-skyblue);
+    margin-top: 0.6rem;
+}
+
+.doctor-portfolio-card-namelist-div ul{
+    list-style-type: none;
+    padding-left: 0;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 0;
+    }
+.doctor-portfolio-card-namelist-div ul li{
+    line-height:20px;
+}    
+
+
+.doctor-portfolio-card-bottom-line-div{
+    background-color: var( --skyblue-20);
+    height: 0.5rem;
+}    
+/*--------------medicalfield-section---------------*/
+.medicalfield-section{
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medicalfield-heading-div{
+    width: 90%;
+    padding: 3rem 0 2rem 0;
+}
+.medicalfield-section-grid-div{
+    width: 90%;
+    display: grid;
+    grid-template-areas:"card1 card2"
+    "card3 card4"
+    "card5 card6";
+    grid-template-columns: 48% 48%;
+    justify-content: center;
+    justify-items: center;
+    grid-gap:1.5rem;
+    margin: 0 0 3rem 0;
+}
+.medicalfield-cards-div{
+    
+        color: var(--white-text);
+        height: 32rem;
+        width: 100%;
+       padding-bottom:4rem;
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+    }
+
+.medicalfield-cards-div h3{
+    color: white;
+    
+    letter-spacing: 0.1rem;
+    padding-left: 2rem;
+}    
+.medicalfield-cards-div p{
+    padding: 0 0 0 2rem;
+}
+/*------------services-section---------------*/
+
+.services-section-heading{
+    padding: 3rem 0 3rem 0;
+    width: 90%;
+}
+.services-section-div{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "icon1 icon2 icon3"
+    "icon4 icon5 icon6";
+  grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    grid-gap:1.5rem;
+}
+.services-section-icons-div{
+  padding: 4rem 3rem;
+}
+
+.services-section-icons-div.travel{
+    grid-area: icon1;
+}
+.services-section-icons-div.food{
+    grid-area: icon2;
+}
+.services-section-icons-div.accommodation{
+grid-area: icon3;
+}
+.services-section-icons-div.labs{
+    grid-area: icon4;
+}
+
+.services-section-icons-div.reports{
+    grid-area: icon5;
+}
+
+.services-section-icons-div.ambulance{
+    grid-area: icon6;
+}
+
+
+
+
+
+.text-light{
+    font-size:1.8vw;
+    letter-spacing: 1px;
+}
+ 
+
+}
+
+/*---------desktop view--------------*/
+@media screen and (min-width:841px) {
+   
+
+.search-bar-section{ width: 100%;
+    background: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg") no-repeat ;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 350px;
+    padding-left: 6%;
+}
+
+.ct-heading{
+   padding: 5% 0 0 5% ;
+  
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 0px;
+}
+
+
+
+.ct-paragraph{
+    padding: 0.5% 0 0 5%;
+    font-weight: bold;
+    max-width: 40%;
+    text-align:left;
+}
+
+.search-bar-section-heading{
+    width: 40%;
+    min-width: 480px;
+    margin-bottom: 30px;
+}
+.search-bar-form-div{
+    width: 50%;
+    height: 14%;
+   min-width: 580px;
+}
+.search-bar-form{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    justify-content: space-between;
+    height: 100%;
+}
+.search-bar-form input{
+letter-spacing: .5px;
+
+}
+.search-bar-form-location-input-div{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px gray solid; 
+    height: 100%;
+  
+}
+
+.search-bar-form-specific-input-div{
+    padding-left: 3%;
+    height: 100%;
+    margin-left: 0%;
+    background-color: white;
+}
+
+.search-bar-form-btn{
+    padding:0 0 ;
+    width: 100%;
+    height: 100%;
+}
+/*---------procedure-section ------------*/
+.procedure-section{
+
+   display: grid;
+   height: auto;
+   justify-items: start;
+   width: 100%;
+   padding: 3% 0 0 6%;
+   }
+
+.procedure-section-heading-div{
+    height: 70px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.procedure-section ul{
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 ;
+}
+
+.procedure-section-lists-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "list1 detailone"
+    "list2 detailone"
+    "list3 detailone"
+    "list4 detailone"
+    "list5 detailone"
+    "list6 detailone"
+    "list7 detailone";  
+}
+
+.procedure-section-lists-div li{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-content: center;
+    border: 1px rgb(230, 228, 228) solid;
+    width: 70%;
+    height: auto;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    text-align: left;
+    color: gray;
+    font-size: 2rem;
+    padding:  6% 0 6% 7%;
+
+}
+
+.procedure-section-div1{
+
+grid-area: list1;
+   
+}
+
+.mrgn-25{
+    margin: 0 25px 0 0;
+}
+.procedure-section-div2{
+    grid-area: list2;
+   
+    }
+    .procedure-section-div3{
+        grid-area: list3;
+        }
+        
+        .procedure-section-div4{
+            grid-area: list4;
+            }
+
+            .procedure-section-div5{
+                grid-area: list5;
+                }
+                .procedure-section-div6{
+                    grid-area: list6;
+                    }
+                    .procedure-section-div7{
+                        grid-area: list7;
+                        }
+                    
+        
+
+
+
+.large-lbl{
+    font-size: x-large;
+    font-weight:900;
+}
+
+
+
+.procedure-section-div1-description{
+    grid-area: detailone;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    padding: 0 0 0  5% ;
+}
+
+.procedure-section-div1-description figure{
+   width: 100%;
+    padding: 1rem 0 0 0 ;
+    margin: 0  0 4rem 0;
+}
+
+.description-text-div{
+    width: 80%;
+    text-align: center;
+}
+/*---------------------doctor-portfolio-section--------------------------*/
+.doctor-portfolio-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 50px 0 0 0px;
+}    
+
+.doctor-portfolio-heading-div{
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    width: 80%;
+
+}
+
+.doctor-portfolio-section-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    grid-template-areas: "card1 card2 card3 card4";
+    width: 80%;
+    height:50rem;
+    grid-gap: 1rem;
+}
+
+.doctor-portfolio-card-div{
+    display: flex;
+    flex-direction: column;
+   height: 80%;
+   
+}
+.portfolio-card1{
+    grid-area: card1;
+   
+}
+.portfolio-card2{
+    grid-area: card2;
+    
+}
+.portfolio-card3{
+    grid-area: card3;
+}
+.portfolio-card4{
+    grid-area: card4;
+}
+
+.doctor-portfolio-card-div figure{
+   width: 100%;
+   height: 30rem;
+   object-fit: contain;
+}
+
+.doctor-portfolio-card-details-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: white;
+    padding-top: 1rem;
+}
+
+.doctor-portfolio-card-namelist-div{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 80%;
+color: var( --light-skyblue);
+}
+.light-text{
+    font-size: 1.6rem;
+}
+.doctor-portfolio-card-hr-div{
+    width: 3rem;
+    margin-right: 0.5rem;
+    height: 0.2rem;
+    background-color: var( --light-skyblue);
+    margin-top: 0.6rem;
+}
+
+.doctor-portfolio-card-namelist-div ul{
+    list-style-type: none;
+    padding-left: 0;
+    color: black;
+    margin-top:0;
+    margin-bottom: 8%;
+    line-height: 1.6rem;
+    }
+
+
+    .doctor-portfolio-card-bottom-line-div{
+        background-color: var( --skyblue-20);
+        height: 0.5rem;
+    }    
+/*-------------medicalfield-section----------*/  
+.medicalfield-section{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medicalfield-heading-div{
+    width: 85%;
+    padding: 5rem 0 5rem 0;
+}
+.medicalfield-section-grid-div{
+    display: grid;
+    grid-template-areas:"card1 card2 card3"
+    "card4 card2 card6"
+    "card4 card5 card6"
+    ;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 20% 40%;
+    justify-content: center;
+    grid-gap:1rem;
+    height: 70rem;
+    width: 85%;
+    padding-bottom: 8rem;
+}
+.medicalfield-cards-div{
+    color: var(--white-text);
+    padding-bottom:3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+
+.medicalfield-cards-div h3{
+    color: white;
+    letter-spacing: 0.1rem;
+    padding-left: 2rem;   
+   
+}    
+.medicalfield-cards-div p{
+    letter-spacing: 0.1rem;
+    padding-left: 2rem;
+    font-size: 1.3rempx;
+    font-weight: bold;
+}
+
+
+.services-section-heading{
+    padding: 4rem 0 4rem 0;
+    text-align: left;
+    width: 90%;
+}
+.services-section-div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    padding-bottom: 80px;
+}
+.services-section-icons-div{
+  padding:3rem 2.6rem;
+  margin: 1rem;
+}
+
+.services-section-icons-div img{
+    height: 65%;
+    width: 50%;
+    background-size: cover;
+}
+.enquiry-section{
+   display: grid;
+   grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+}
+
+.enquiry-section-heading{
+    padding: 5rem 0;
+}
+.enquiry-section-button-div{
+    width:25rem;
+    height: 5rem;
+}
+
+ 
+
+
+}

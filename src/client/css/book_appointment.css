@@ -1,0 +1,84 @@
+@import "./variable.css";
+
+main{
+     width: 100%;
+     padding-bottom: 2rem;
+    background-color: var(--appointment-page-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+section{
+     width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+}
+
+.form-heading{
+    color: var(--appointment-page-heading-color);
+    padding:0  0;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 90%;
+}
+
+input{
+    height: 3rem;
+}
+.first-input{
+    border: 0.2rem solid black ;
+}
+.radio-div{
+   display: grid;
+   justify-content: start;
+}
+.radio-div label{width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    color: var(--light-gray-font-color);
+    font-size:1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+input[type="radio"]{
+width: 0;
+margin-right: 2rem;
+}
+.submit-btn{margin: 2rem 0;
+    width:100%;
+    height: 4rem;
+    letter-spacing:0.2rem;
+}
+textarea{ width: 100%;}
+@media screen and (max-width:480px){ 
+  section{
+      width: 90%;
+  }
+}
+
+
+  @media screen and (min-width:841px){ 
+    
+    section{
+        width: 40%;
+        height: 80%;
+       
+    }
+    .form-heading{
+        text-align: center;
+    }
+  }

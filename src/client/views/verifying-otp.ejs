@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvastra-login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../css/login-signup.css" type="text/css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+  <%- include("header.ejs") %>
+      <section>
+      <div class="user-signin-div margin-15rem">
+          <h2>OTP</h2>
+          <% if(number_type == "registered"){ %>
+            <form method="POST" action="/otp_verify_for_repswrd" class="login-form">
+              <% } else{ %>
+                <form method="POST" action="/otp_verify" class="login-form">
+                  <% } %>
+                            
+    <div class = "form-div">
+     <p>We have sent One Time Password(OTP) the <%- number_type %> Phone Number</p>
+      <div class="input-with-icons" id = "ent-otp-code">
+      <input type="text" name="otp_code" value ="" placeholder="Enter OTP Code">
+      <input type = "hidden" name = "user_id_num" value= <%- user_number %> >
+      </div>
+      
+  <span class = "flex-row-between links-row-div">
+    <a href="http://localhost:4000/login_page"><label>Login with email</label></a>
+    <div id = "timer">
+        <span id = "timer-span"></span>
+    </div>  
+</span>   
+      <button type="submit" class="form-btn submit-btn">SUBMIT <span>&#10140</span></button>
+    </div>
+    </form>
+    
+ 
+      </div>
+    </section>
+
+
+    <label>All Rights Reserved. &#169;tvastra 2020 </label>
+    <script>
+      function reset_password(){
+        console.log("button clicked");
+        document.getElementById("new_form").innerHTML = `<form id = "forget_form" method = "POST" action= "/forget_password"> <input type = "email" name = "user_email" value = "${document.getElementById("email_id").value}" >`
+        document.getElementById("forget_form").submit();
+        }
+      </script>
+</body>
+
+</html>
+      </div>
+</section>
+
+    
+        <label>All Rights Reserved. &#169;tvastra 2020 </label>
+      
+<script>
+    var timepassed = 0;
+    var max_time = 300;
+    var time_left = max_time;
+    document.getElementById("timer-span").innerHTML = `<label>Resend in:   
+   ${format_timmer(time_left)} </label>`;
+
+    function format_timmer(x){
+             var min  = Math.floor( x / 60);
+             var sec =  x % 60;
+             if(sec < 10) sec = `0${sec}`;
+             return `${min}:${sec}`
+    }
+
+    function timeinterval(){
+        setInterval(()=>{
+            timepassed++;
+            time_left = max_time - timepassed;
+            document.getElementById("timer-span").innerHTML = `<label>Resend in: 
+       ${format_timmer(time_left)} </label>`;
+              console.log(format_timmer(time_left));
+        }, 1000);
+    }
+    timeinterval();
+</script>   
+</body>
+</html>

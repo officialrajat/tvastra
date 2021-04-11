@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvastra-login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../css/login-signup.css" type="text/css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+  <%- include("header.ejs") %>
+      <section>
+      <div class="user-signin-div margin-15rem">
+          <h2>Login</h2>
+  <form method="POST" action="/otp_request" class="login-form">
+    <div class = "form-div">
+     
+      <div class="input-with-icons" id = "entr-mobile-number">
+      <input type="text" name="mobile_num" value ="" placeholder="Enter Mobile Number">
+      <i class="fa fa-question-circle"></i>
+      </div>
+        
+     
+  <span class = "flex-row-between links-row-div">
+    <a href="http://localhost:4000/login_page">Login with email</a>
+  </span>   
+      <button type="submit" class="form-btn submit-btn">GET OTP <span>&#10140</span></button>
+    </div>
+    </form>
+  <p>Not Registered? <a href="http://localhost:4000/signup_page">Sign Up</a></p>
+      </div>
+</section>
+
+    
+        <label>All Rights Reserved. &#169;tvastra 2020 </label>
+      
+
+</body>
+</html>

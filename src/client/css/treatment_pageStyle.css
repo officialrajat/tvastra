@@ -1,0 +1,296 @@
+@import "./variable.css";
+
+.heading-section{
+    width: 100%;
+    position: relative;
+    height: 26rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.heading-section div:first-of-type{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position:absolute;
+    background-image: linear-gradient(90deg,var(--skyblue-lineargradient),var(--tranparent));
+}
+.heading-section figure{
+    z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.heading-section figure img{
+    object-fit: cover;
+    object-position:top;
+      
+}
+
+.page-heading{ z-index: 3;
+    color: white;
+    position: absolute;
+}
+
+.about-section{
+    display: grid;
+    margin-bottom: 2rem;
+}
+.about-heading-div{
+    text-align: left;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0 2rem;
+}
+
+.about-heading-div figure{
+    height: 35rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.details-div{
+    display: flex;
+    flex-direction: column;
+    color: var(--darkgray-color);
+}
+
+.about-discription-div p {
+    font-weight: 10;
+    font-size: 1.8rem;
+    line-height:2.8rem;
+}
+
+
+.about-discription-div ul li {
+    font-size: 1.6rem;
+    list-style: disc;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+
+}
+
+.steps-discription-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 16rem;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+.steps-details-div{
+    margin-top:1.2rem;
+}
+.steps-details-div p{
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+
+
+.serviceDetails-section{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.table1 ,.table2{
+    width: 80%;
+    border: 0.1rem var(--lightgray-50) solid;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.table1 ul li , .table2 ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.1rem var(--lightgray-50) solid;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.table-name-div{
+    display: flex;
+    align-items: center;
+    
+}
+.table-name-div div:first-of-type{
+    background-color: var(--darksky-color);
+    height: 0.3rem;
+    width: 2rem;
+
+}
+
+.more-services-section{display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   background-color:var(--darksky-color);}
+
+ #more-services-heading{
+     color: white;
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+ }  
+ .arrow-icons{
+     font-size:3rem;
+     padding: 1rem;
+ }
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:2rem;
+}
+.more-services-card-div{
+  overflow: hidden; 
+  background-color: white;
+    height: 34rem;
+    width: 90%;
+    border-radius: 1.5rem;
+    margin: 1rem 0 ;
+}
+
+.more-services-card-div figure{
+   
+    width:100%;
+    height: 80%;
+    
+}
+.more-services-card-div figure img{
+    object-fit: cover;
+}
+.treatment-name{
+ margin: 2.5rem 0;   
+}
+.treatment-name div{
+    margin-right: 2rem;
+}
+
+/*------------------tablet-view--------------------*/
+
+@media screen and (min-width:481px) and (max-width:840px){ 
+    .about-section{
+       grid-template-columns: 38% 62%;
+       grid-gap:2rem;
+      width: 90%;
+    }
+    .about-heading-div{
+        text-align: left;
+    }
+    .details-div{
+        margin-top: 6.1rem;
+    }
+    .steps-discription-section{
+        width: 90%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 3rem 3rem 3rem;
+    }
+
+    .serviceDetails-section{width: 90%;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;       
+    }
+    .table2,.table1{
+        margin-left: 0;
+    }
+    .more-services-section{
+        justify-items: center; 
+    }
+    #more-services-heading{flex-direction:row;
+        justify-content: space-between;
+     margin: 0;
+     width: 90%;
+    }
+    .cards{width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .more-services-card-div{
+        height: 30rem;
+        margin-right: 1.5rem;   
+    }
+  
+    .more-services-card-div figure{
+        height: 70%;
+    }
+
+
+}
+
+/*----------desktop-view-------------------------*/
+
+
+@media screen and (min-width:841px) {
+    main{width: 90%;
+        display: grid;
+        grid-template-areas: "section1 section2"
+        "section3 section2";
+        justify-content: space-between;
+        grid-template-columns: 70% 30%;
+    }
+
+    .about-section{
+        grid-area: section1;
+        grid-template-columns: 38% 62%;
+        grid-gap:2rem;
+       width: 90%;
+     }
+     .about-heading-div{
+         text-align: left;
+     }
+     .details-div{
+         margin-top: 6.1rem;
+     }
+     .steps-discription-section{grid-area: section3;
+         width: 90%;
+         display: grid;
+         justify-content: space-between;
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: 0 3rem 3rem 3rem;
+     }
+ 
+     .serviceDetails-section{
+        grid-area: section2;
+         width: 90%;
+         
+              
+     }
+     .table2,.table1{
+         margin-left: 0;
+         margin-bottom: 0;
+         
+     }
+     .more-services-section{
+         justify-items: center; 
+         
+     }
+     #more-services-heading{flex-direction:row;
+         justify-content: space-between;
+      margin: 0;
+      width:90%;
+     }
+     .cards{width: 90%;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     
+     .more-services-card-div{
+         height: 30rem;
+         margin-right: 1.5rem;   
+     }
+   
+     .more-services-card-div figure{
+         height: 70%;
+     }
+ 
+ 
+}

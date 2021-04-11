@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="../css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../css/book_appointment.css" type="text/css" rel="stylesheet">
+    <title>Tvastra-appointment</title>
+</head>
+<body>
+  <%- include("header.ejs") %>
+
+<main>
+        <section>
+            <div class="heading-div form-heading">
+                <h2>Book an Appointment</h2>
+            </div>
+            <div class="form-div">
+                <form>
+                    <h3>Select Appointment Date*</h3>
+                    <input type="date" name="date" placeholder="dd/mm/yyyy" class="first-input" required>
+                    <h3>Time Interval*</h3>
+                    <div class="radio-div">
+                    <label>
+                    <input type="radio" name="timing" value="morning" id="morning">
+                    Morning</label>
+                    <label >
+                    <input type="radio" name="timing" value="afternoon" id="afternoon">
+                    Afternoon</label>
+                    <label>
+                    <input type="radio" name="timing" value="evening" id="evening">
+                   Evening</label>
+                   
+                  </div>
+                    <h3>Appointment Status/Urgency*</h3>
+                    <div class="radio-div">
+                    <label>
+                    <input type="radio" name="appontmt_type" value="Routine" id="routine">
+                    Routine Check-up</label>
+                    <label>
+                    <input type="radio" name="appontmt_type" value="non-urgent" id="non-urgent">
+                    Non Urgent Check-up</label>
+                    <label>
+                    <input type="radio" name="appontmt_type" value="urgent" id="urgent">
+                    Urgent Check-up</label>
+                    <label>
+                    <input type="radio" name="appontmt_type" value="Surgical" id="surgical">
+                    Surgical Appointment</label>
+                    </div>
+                    <h3>Upload Previous Health Record</h3>
+                    <input type="file">
+                    <h3>Appointment Details</h3>
+                    <textarea id = "appntmt_details" name = "appntmt_details" rows = "5" cols="37"></textarea>
+                    <button type="submit" class="form-btn submit-btn"><label>BOOK APPOINTMENT</label></button>
+                </form>
+            </div>
+        </section>
+          <label>All Rights Reserved. &#169;tvastra 2020 </label>
+        </main>
+</body>
+</html>

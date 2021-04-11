@@ -1,0 +1,631 @@
+@import "./variable.css";
+
+
+@font-face{
+    font-family: Nexa-Bold;
+    src: url(../views/font-style/Nexa-Bold.otf);
+    }
+    @font-face{
+        font-family: Nexa-Light;
+        src: url(../views/font-style/Nexa-Light.otf);
+    }
+
+    html{
+        font-size:62.5%;
+    }
+
+/*body----------*/
+body{
+    width: 100vw;
+    margin:0%;
+    padding: 0%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    overflow-x: hidden;
+}
+/* h1...h6 , p and label*/
+h1, h2 ,h3 ,h4, h5, h6{ 
+    font-family: Nexa-Bold;    
+   }
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 2rem; 
+}
+h3 {
+   font-size: 1.6rem; 
+}
+h4{
+font-size:1.4rem;
+}
+
+p{
+    font-family:Nexa-Light;
+    font-size: 1.2rem;
+}
+
+li{
+    font-family: Nexa-Light;
+    letter-spacing: 0.1rem;
+}
+
+label{font-family: Nexa-Bold;
+}
+table{
+    font-family:Nexa-light;
+}
+ input{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    padding: 0%;
+    }
+ img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     object-position: top;
+ }
+
+  ul{margin:0;
+    padding:0;
+    list-style-type: none;   
+}
+ a {
+    text-decoration: none;
+} 
+ ::placeholder{
+     color:gray;
+     font-family: Nexa-light;
+ }
+ .flex-col-cntr{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .flex-row-cntr{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+ .flex-row-between{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+ }
+ .light-gray{
+     color: var(--light-gray-font-color);
+ }
+.enquiry-section{box-sizing: border-box;
+    background-color: var( --lightsky-color);
+    width: 100%;
+}
+
+.new-enquiry-btn{
+    background-color: var(--light-blue-80);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width:100%;
+    height: 100%;
+  }
+/*-----------------------------------------------------------*/
+/*-----------mobile-view---------------------------------*/
+@media screen and (max-width:480px){
+      
+.heading-div{
+    text-align: center;
+}
+
+.heading-div h1{
+    font-size: 2.6rem;
+    margin:2rem 0 0 0;
+    
+}
+.heading-div p{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0 2rem 0; 
+}
+.heading-div h2{
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+
+/*header---------------------------------------*/
+    header{
+        display: grid;
+        grid-template-areas: "logo icons";
+        grid-template-columns: 40% 60%;
+        
+        justify-items:left;
+
+       height: 4.5rem;
+    }
+    header figure{
+        grid-area: logo;
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0.8rem 0 0 2rem ;
+    }
+    .top-navigation-icon{ grid-area: icons;
+        width: 90%;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        padding: 0 0 0 0;  
+    }
+.top-navigation-links{display: none;
+ list-style: none;
+}
+
+
+.top-navigation-buttons{display: none;  
+}
+/*--------enquiry-section------------------------------------*/
+.enquiry-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.enquiry-section-heading{
+width: 90%;
+padding: 3rem 0 1rem 0 ;
+text-align: center;
+}
+.enquiry-section-button-div{
+    width: 42%;
+    min-width: 14rem;
+    height: 4rem;
+    padding:0 0 3rem 0;
+}
+
+
+    /*footer-----------------------------------------*/
+    
+footer{ color: white;
+    background-color: var(--footer-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10%;
+    margin:0%;
+    width: 100%;
+}
+
+footer figure{
+    width: 12rem;
+    height: 3rem;
+    padding: 0% 25%;
+}
+
+.bottom-logo-lg{
+    display: none;
+}
+.footer-nav-links-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+.footer-nav-links-div ul li{
+    padding:0 0 15px 0;
+}
+.footer-nav-links-div ul li a{
+    color: white;
+   
+}
+
+.footer-social-media-icons-div{
+    display: flex;
+   flex-direction: row;
+   justify-items: center;
+   justify-content: space-between;
+   width: 50%;
+}
+
+.footer-social-media-icons i{
+    max-width: 15px;
+}
+.copyright-text{
+    padding: 20px 0 20px 0;
+}
+
+}
+
+/*----------------------desktop-view---------------------------*/
+@media screen and (min-width:841px) {
+    
+.heading-div{
+    padding: 0;
+    text-align: left;
+}
+.heading-div h1{
+font-size:3rem;
+}
+
+.heading-div p{
+   font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0 0 0;
+}
+.heading-div h2{
+    letter-spacing: 0.1rem;
+}
+
+
+ /*header---------------------------------*/
+    header{
+        display: grid;
+        grid-template-columns: 15% 60% 25%;
+        align-items: center;
+        justify-content:space-around;
+        justify-items: right;
+        height: 6.5rem;
+        max-height: 6.5rem; 
+        position: relative;
+        }
+    header figure{
+        width: 14rem;
+        height: 3rem;
+        padding: 0 0 0 5rem;
+    }
+
+    nav{
+        max-height: 1rem;
+        width: 90%;
+        max-width: 100%;
+        padding: 0 5% 0 0;
+        
+    }
+    .top-navigation-links{
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .top-navigation-links a {
+     
+        color: black;
+        font-family: Nexa-Light;
+        padding: 2rem 0.5rem;
+        margin: 0 2rem 0 0;
+        font-weight: bold;
+        
+    }
+   .top-navigation-links li :hover{
+
+    color: white;
+    background-color:var(--light-black) ;
+   }    
+.top-navigation-buttons{
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    width: 100%;
+}
+
+.header-btn{
+    padding:  3% 0;
+    width: 40%; 
+    border:1.5px solid black;
+    border-radius: 5%;
+    margin: 1rem;
+}
+
+.header-btn:hover{
+    border: 1.5px solid;
+    background-color: #BBDEFB;
+}
+
+.login-link{
+    text-decoration: none;
+    color: black;
+}
+.quote-link{
+   text-decoration: none;
+    color: white;
+}
+.top-navigation-icon{
+    display: none;
+}
+/*-------------enquiry-section-----------------*/
+.enquiry-section{ 
+    display: grid;
+    grid-template-columns: auto auto;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .enquiry-section-heading{
+     padding: 5rem 0;
+ }
+ .enquiry-section-button-div{
+     width:25rem;
+     height: 5rem;
+ }
+ 
+
+/*footer -----------------------------------------------*/
+footer{ 
+    box-sizing: border-box;
+    display: grid;
+     
+    grid-template-areas: "nav logo"
+    "copyrt social-link";
+   justify-content: space-between;
+    padding: 3rem 10rem;
+   grid-gap: 2rem;
+    color: black;
+    width: 100%;
+}
+
+footer figure{grid-area: logo;
+width: 13rem;
+height: 3.5rem;
+}
+
+.bottom-logo-sml{
+    display: none;
+}
+.footer-nav-links-div{
+    grid-area: nav;
+    
+   
+}
+
+.footer-nav-links-div ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer-nav-links-div a{ color: black;
+    text-decoration: none;
+    padding-right: 2rem;
+    font-weight: bold;
+    
+}
+
+.footer-social-media-icons-div{
+    grid-area: social-link;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 15rem;
+}
+
+.footer-social-media-icons i{
+    width: 2rem;
+}
+.copyright-text label{
+    grid-area: copyrt;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-family: Nexa-Light;
+    text-align: start;
+}
+
+
+}
+/* ---------------------------tablet-view---------------------*/
+@media screen and (min-width:481px) and (max-width:840px){
+
+    .heading-div{
+        padding: 2.5rem 0 0 0;
+        text-align: center;
+        margin: 2rem 0 2rem 0 ;
+    }
+    .heading-div h1{
+        margin: 0;
+        font-size: 2.8rem;
+    }
+    .heading-div p{
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        margin: 1rem 0 0 0;
+    }
+    .heading-div h2{
+        letter-spacing: 0.1rem;
+        font-size: 2rem;
+    }
+
+
+    /*header ----------------------------*/
+    header{
+        display: grid;
+        grid-template-areas: "logo icon";
+         width:100%;
+         height: 5rem;
+         align-content: center;
+         justify-content: space-between;
+       }
+    
+       .company-logo{
+           padding: 0  0 0 3rem ;
+           grid-area: logo;
+           height: 90%;
+           width: 10rem;
+           
+       }
+   .top-navigation-links{
+    display: none;
+   }
+   
+   .top-navigation-buttons{
+       display: none;
+   }
+   .top-navigation-icon{
+       color: gray;
+       padding:0 3rem 0 0;  
+       grid-area: icon; 
+   }
+   .top-navigation-links li{
+       padding: 2rem;
+   }
+/*------------enquiry-section---------------*/
+.enquiry-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.enquiry-section-heading{
+width: 90%;
+padding: 3rem 0 1rem 0 ;
+text-align: center;
+}
+.enquiry-section-button-div{
+    width:24%;
+    min-width: 14rem;
+    height: 4rem;
+    padding:0 0 3rem 0;
+}
+
+
+
+/*footer -----------------------------------------------*/
+footer{ 
+    box-sizing: border-box;
+    display: grid;
+     
+    grid-template-areas: "nav logo"
+    "copyrt social-link";
+   justify-content: space-between;
+    padding: 3rem 10rem;
+   grid-gap: 2rem;
+    color: black;
+    width: 100%;
+}
+
+footer figure{grid-area: logo;
+width: 13rem;
+height: 3.5rem;
+}
+
+.bottom-logo-sml{
+    display: none;
+}
+.footer-nav-links-div{
+    grid-area: nav;
+    
+   
+}
+
+.footer-nav-links-div ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer-nav-links-div a{ color: black;
+    text-decoration: none;
+    padding-right: 2rem;
+    font-weight: bold;
+    
+}
+
+.footer-social-media-icons-div{
+    grid-area: social-link;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 15rem;
+}
+
+.footer-social-media-icons i{
+    width: 2rem;
+}
+.copyright-text label{
+    grid-area: copyrt;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-family: Nexa-Light;
+    text-align: start;
+}
+
+
+
+}
+
+
+
+header{
+    width: 100%;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    margin: 0%;
+  
+}
+
+
+
+
+.small-text{
+   font-size: 0.85rem;
+}
+
+ .f-size2{
+     font-size: 2rem;
+ }
+.form-btn{
+    background-color: var(--light-black);
+    border-style: none;
+    color: white;   
+
+}
+
+.name-skyblue{
+    color:var( --light-skyblue);
+}
+.white{ color: var(--white-text);
+}
+.light-text{
+    letter-spacing: 0.1rem;   
+}
+
+.bg-white{
+    background-color: white;
+}
+.bg-black{
+    background-color: var(--light-black);
+ 
+}
+.gray{
+    color: gray;
+}
+
+.wdth100{
+    width: 100%;
+}
+
+
+
+  
+
+
+

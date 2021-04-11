@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvastra-submit-query</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../css/query-page.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <%- include ("header.ejs") %>
+
+    <main>
+        <div class="main-div">
+            <div class="form-heading-div">
+                <h2>Submit your query</h2>
+            </div>
+            <form method="POST" action="#" id="query_form">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="text" name="phone_number" placeholder="Enter Phone Number">
+                <input type="email" name="email" placeholder="Enter Email">
+                <textarea form="query_form" placeholder="Write your query here"></textarea>
+                <button class="wdth100 bg-black white" onClick="submit" >SUMBIT</button>
+            </form>
+        </div>
+    </main>
+        
+            <label>All Rights Reserved. &#169;tvastra 2020 </label>
+          
+  
+ 
+</body>
+</html>
